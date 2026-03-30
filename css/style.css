@@ -63,6 +63,38 @@ iframe{
     list-style: none;
 }
 
+@media screen and (min-width: 1000px){
+    .container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+    .container2 {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+    .container3 {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+    img {
+    width: 100%;
+    height: auto;
+  }
+
+}
+/*the below code is taken from Claude AI to help style my form */
+fieldset {
+  border: 2px solid var(--color-primary);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+}
+
 /*the below code is taken from https://stylestage.dev/styles/ */
 
 @font-face {
@@ -80,13 +112,13 @@ iframe{
   font-display: swap;
 }
 :root {
-  --color-primary: #3a00ff;
-  --color-primary-alt: #6f6ffd;
-  --color-secondary: #d42257;
-  --color-background: #d2fbf7;
+  --color-primary: #3100d2;
+  --color-primary-alt: #e7fe34;
+  --color-secondary: #180ed1;
+  --color-background: #e7fc72;
   --color-text: rgb(64.925, 44.625, 133.875);
   --color-light: #fff;
-  --color-anchor: #3a00ff;
+  --color-anchor: #3400df;
   --font-family: "Baloo 2", sans-serif;
   --font-weight-strong: 500;
   --font-size-h1: 6rem;

@@ -64,9 +64,32 @@
           The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
         </p>
       </section>
+      <section>
+        <h2>Join the CDO Mailing List!</h2>
+        <form id="mailingForm">
+          <fieldset>
+            <legend>Join Our Career Development Mailing List! </legend>
+
+            <label for="name_id">Your Name</label>
+            <input type="text" placeholder="Enter Your Name" id = "name_id" name="name" required>
+
+            <label for="email_id">Your Email</label>
+            <input type="email" placeholder="Enter Your Email" id = "email_id" name="email" required>
+
+            <label for="phone_id">Your Phone Number</label>
+            <input type="tel" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+            <input type="submit" value = "Add Me">
+        </fieldset>
+      </form>
+    </section>
       </main>
-        <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-      </footer>
+    <footer>
+    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+    <p>© <span id="year"></span></p>
+    </footer>
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 </html>

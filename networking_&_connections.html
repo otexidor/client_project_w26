@@ -60,9 +60,12 @@
         The UMSI Career Development Office (CDO) offers personalized support through appointments, events, and resource guides. <a href="https://umich.instructure.com/courses/137916" target="_blank">Visit the CDO website</a> or <a href="https://www.si.umich.edu/about-umsi/getting-umsi" target="_blank">find us on campus</a> to learn more, schedule a coaching session, or just say hello.
       </p>
     </section>
-        <footer>
-        <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office </a></p>
-        </footer>
-    </main>
+    <footer>
+    <p>University of Michigan School of Information | <a href="https://umich.instructure.com/courses/137916">UMSI Career Development Office</a></p>
+    <p>© <span id="year"></span></p>
+    </footer>
+  <script>
+  document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
 </body>
 </html>
